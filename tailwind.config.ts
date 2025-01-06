@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        "cyan-glow": "0px 0px 10px 4px rgba(77, 213, 202, 0.7)",
+      },
     },
   },
   plugins: [],

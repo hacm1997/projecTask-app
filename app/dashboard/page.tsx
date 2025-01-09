@@ -7,7 +7,7 @@ import { withAuth } from "@/utils/withAuth";
 function Home() {
     return (
         <MainLayout>
-            <div className="px-32 pt-28 flex flex-col items-center">
+            <div className="px-0 md:px-32 pt-28 flex flex-col items-center">
                 <ProjectList />
             </div>
         </MainLayout>

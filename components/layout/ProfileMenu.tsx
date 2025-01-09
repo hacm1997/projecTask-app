@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { useState } from 'react'
 
 interface Props {
@@ -12,7 +12,7 @@ export const ProfileMenu = ({ name }: Props) => {
 
     const logOut = () => {
         Cookies.remove('auth.user')
-        Cookies.remove('auth.auth_email')
+        Cookies.remove('auth_email')
         window.location.href = '/'
     }
     return (
@@ -33,13 +33,13 @@ export const ProfileMenu = ({ name }: Props) => {
                                 </div>
                             </Link>
                         </li> */}
-                        <li>
+                        {/* <li>
                             <Link href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
                                 <div className="inline-flex items-center text-[14px]">
                                     <span className='pl-1 font-bold'>Perfil</span>
                                 </div>
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <a onClick={logOut} title='Login Out' className="block cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
                                 <div className="inline-flex items-center text-[14px]">

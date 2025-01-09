@@ -22,15 +22,15 @@ export const Header = () => {
                 {/* Desktop menu */}
                 <nav className="hidden md:flex items-center space-x-10">
                     <ul className="flex space-x-6 text-[#E4E4E7]">
-                        <li className="text-[16px] font-medium hover:text-[#4C4E53]">
+                        {/* <li className="text-[16px] font-medium hover:text-[#4C4E53]">
                             <Link href="/">Home</Link>
+                        </li> */}
+                        <li className="text-[16px] font-medium hover:text-[#4C4E53] cursor-pointer">
+                            <Link href="/dashboard" title="proyectos">Proyectos</Link>
                         </li>
-                        <li className="text-[16px] font-medium hover:text-[#4C4E53]">
-                            <Link href="#">Proyectos</Link>
-                        </li>
-                        <li className="text-[16px] font-medium hover:text-[#4C4E53]">
+                        {/* <li className="text-[16px] font-medium hover:text-[#4C4E53]">
                             <Link href="#">Tareas</Link>
-                        </li>
+                        </li> */}
                         {/* <li className="text-[16px] font-medium hover:text-[#4C4E53]">
                             <Link href="#">Soy Artista</Link>
                         </li> */}
@@ -60,9 +60,9 @@ export const Header = () => {
             {isOpen && (
                 <div className="md:hidden h-[90vh] flex flex-col justify-around" ref={ref}>
                     <div className="px-2 pt-2 pb-3 space-y-8 sm:px-3 text-center">
-                        <Link href="/" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-                        <Link href="#" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Proyectos</Link>
-                        <Link href="#" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Tareas</Link>
+                        {/* <Link href="/" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Home</Link> */}
+                        <Link href="/dashboard" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Proyectos</Link>
+                        {/* <Link href="#" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Tareas</Link> */}
                         {/* <Link href="#" className="text-[#E4E4E7] block px-3 py-2 rounded-md text-base font-medium">Soy Artista</Link> */}
                     </div>
                     <div className="pt-4 pb-3 border-t border-gray-700">

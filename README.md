@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Task App (FrontEnd)
 
-## Getting Started
+Dashboard for managing projects, tasks, and comments
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework for developing React applications.
+- **TypeScript**: A superset of JavaScript that enhances development experience with static typing.
+- **Tailwind CSS**: A CSS design framework.
+- **React Icons**: A collection of React Icons.
+- **Axios**: For API requests.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The folder structure of the project is as follows:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📁 root/
 
-## Learn More
+├── 📁 components/ # Reusable components
 
-To learn more about Next.js, take a look at the following resources:
+├── 📁 envs/ # Contains the necessary environment variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+├── 📁 hooks/ # Custom hooks (e.g., useFavorites, useMovies)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+├── 📁 app/ # Main pages (e.g., Home, Favorites)
 
-## Deploy on Vercel
+├── 📁 services/ # Module for making API requests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+├── 📁 middlewares/ # For protected routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+├── 📁 context/ # To maintain the logged-in user information across the app
+
+## Installation and Setup
+
+Follow these steps to install and run the project on your local machine:
+
+1. **Clone the repository**:
+
+   git clone https://github.com/LeonardoGomezz/movies_app.git
+
+2. **Enter the directory**:
+
+   cd movies_app
+
+3. **Install the dependencies**:
+
+   npm install
+
+4. **Start the development server**:
+
+   npm run dev
+
+## Features
+
+- **Login**: Login implementation.
+- **User Registration**: To register a user, use the postman collections located in the postman folder at the root of the repository (create a user with 'admin' role and another with 'team member' role).
+- **Create Projects**: Form to create projects (admin only).
+- **Delete Projects**: Administrators can delete projects.
+- **Add collaborators to projects**: Administrators can add collaborators.
+- **Add Tasks**: Users can add tasks.
+- **Delete Tasks**: Users can delete tasks.
+- **Update Tasks**: Users can update tasks.
+- **Assign Tasks**: Admin users can assign tasks.
+- **Search Tasks**: Users can search for tasks by name.
+- **Add Comments**: Users can add comments to tasks.
+
+## Custom Hooks
+
+To keep the code organized and reusable, two custom hooks have been created.
+
+## Validations
+
+- **Search Validation**
+- **User Role Validations**
+- **Form Validations**
